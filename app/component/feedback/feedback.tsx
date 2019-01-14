@@ -1,3 +1,6 @@
+/**
+ * 反馈页面组件
+ */
 import * as React from 'react';
 
 interface State{

@@ -37,7 +37,7 @@ module.exports = {
         new ExtractTextPlugin('css/[name].css'),
     ].concat(htmlPlugin),
     resolve: {
-        extensions: [".ts", ".tsx", ".js", "jsx"],
+        extensions: [".ts", ".tsx", ".js", ".jsx"],
     },
     module: {
         rules: [{

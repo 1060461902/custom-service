@@ -1,3 +1,6 @@
+/**
+ * 登录页面组件
+ */
 import * as React from 'react';
 import {Button,Input,Icon} from 'antd';
 
