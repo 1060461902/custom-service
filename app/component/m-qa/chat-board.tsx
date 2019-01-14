@@ -36,6 +36,90 @@ export default class ChatBoard extends React.Component<any,State>{
         {
             type:'feedback',
             src:''
+        },
+        {
+            type:'text',
+            content:'请在下方输入您的问题',
+            src:''
+        },
+        {
+            type:'result',
+            content:'这是问题的答案',
+            resultArray:[
+                {
+                    linkName:'asdqwe',
+                    url:'http://124124124'
+                },
+                {
+                    linkName:'as315dqw',
+                    url:'http://124124124'
+                },
+                {
+                    linkName:'中文',
+                    url:'http://124124124'
+                }
+            ],
+            src:''
+        },
+        {
+            type:'feedback',
+            src:''
+        },
+        {
+            type:'text',
+            content:'请在下方输入您的问题',
+            src:''
+        },
+        {
+            type:'result',
+            content:'这是问题的答案',
+            resultArray:[
+                {
+                    linkName:'asdqwe',
+                    url:'http://124124124'
+                },
+                {
+                    linkName:'as315dqw',
+                    url:'http://124124124'
+                },
+                {
+                    linkName:'中文',
+                    url:'http://124124124'
+                }
+            ],
+            src:''
+        },
+        {
+            type:'feedback',
+            src:''
+        },
+        {
+            type:'text',
+            content:'请在下方输入您的问题',
+            src:''
+        },
+        {
+            type:'result',
+            content:'这是问题的答案',
+            resultArray:[
+                {
+                    linkName:'asdqwe',
+                    url:'http://124124124'
+                },
+                {
+                    linkName:'as315dqw',
+                    url:'http://124124124'
+                },
+                {
+                    linkName:'中文',
+                    url:'http://124124124'
+                }
+            ],
+            src:''
+        },
+        {
+            type:'feedback',
+            src:''
         }
     ];
     constructor(props:any){
@@ -48,7 +132,7 @@ export default class ChatBoard extends React.Component<any,State>{
     render():JSX.Element{
         return (
             <div>
-                <ul style={{listStyle:'none',padding:'0'}}>
+                <ul style={{listStyle:'none',padding:'0 0 40px'}}>
                     {
                         this.test.map((item,index) => {
                             return (

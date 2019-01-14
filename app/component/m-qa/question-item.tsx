@@ -34,7 +34,7 @@ export function AnswerItem(props:AnswerPropsForm):JSX.Element{
     if(props.src){
         header = <Avatar src={props.src}></Avatar>
     }else{
-        header = <Avatar style={{ backgroundColor: '#87d068' }} icon='user'></Avatar>
+        header = <Avatar style={{ backgroundColor: '#1890ff' }} icon='user'></Avatar>
     }
     switch(props.type){
         case 'text':
@@ -68,12 +68,12 @@ export function AnswerItem(props:AnswerPropsForm):JSX.Element{
             break;
     }
     return(
-        <li style={{padding:'10px 5%',color:'#ffffff'}}>
+        <li style={{padding:'10px 5%',color:'#000000'}}>
             <div style={{display:'inline-block',width:'15%',float:'left'}}>
                 {header}
             </div>
-            <div style={{display:'inline-block',width:'85%',backgroundColor:'#87d068',padding:'5px',borderRadius:'5px'}}>
-                <div style={{width:0,height:0,borderWidth:'10px',borderStyle:'dashed solid dashed dashed',fontSize:0,lineHeight:0,borderColor:'transparent #87d068 transparent transparent',position:'absolute',transform:'translateX(-20px)'}}></div>
+            <div style={{display:'inline-block',width:'85%',backgroundColor:'#ebebeb',padding:'5px',borderRadius:'5px'}}>
+                <div style={{width:0,height:0,borderWidth:'10px',borderStyle:'dashed solid dashed dashed',fontSize:0,lineHeight:0,borderColor:'transparent #ebebeb transparent transparent',position:'absolute',transform:'translateX(-20px)'}}></div>
                 {board}
             </div>
         </li>
@@ -98,7 +98,7 @@ export class BottomInput extends React.Component<any,BottomInputState>{
 
     render():JSX.Element{
         return (
-            <div style={{padding:'0 5%',position:'fixed',bottom:'10px',width:'100%'}}>
+            <div style={{padding:'10px 5%',position:'fixed',bottom:0,width:'100%',backgroundColor:'#ffffff'}}>
                 <Input style={{width:'70%',}}></Input>
                 <Button type='primary' style={{width:'30%',}}>发送</Button>
             </div>
